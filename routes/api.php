@@ -23,18 +23,21 @@ Route::options('{any}', function () {
 });
 
 Route::group(['middleware' => [],], function () {
-    Route::post('login', [LoginController::class, 'login']);
-    Route::post('register', [LoginController::class, 'register']);
+    Route::post('/user/login', [LoginController::class, 'login']);
+    Route::post('/user/register', [LoginController::class, 'register']);
 });
 
 Route::group(['middleware' => ['auth:api']], function () {
 
-    Route::post('logout', [LoginController::class, 'logout']);
+    Route::post('/user/logout', [LoginController::class, 'logout']);
 
     Route::group(['middleware' => ['admin']], function () {
         Route::post('/tasks/create', [TaskController::class, 'create']);
-        Route::post('/tasks/records', [TaskController::class, 'records']);
+        Route::put('/tasks/{id}/update', [TaskController::class, 'update']);
+        Route::delete('/tasks/{id}/delete', [TaskController::class, 'delete']);
+        Route::get('/tasks/{id}', [TaskController::class, 'record']);
     });
     Route::group(['middleware' => ['user']], function () {
+        Route::post('/tasks/records', [TaskController::class, 'records']);
     });
 });

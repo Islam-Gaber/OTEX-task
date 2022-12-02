@@ -1,0 +1,533 @@
+.widthTransition {
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+.text-xxs {
+    font-size: 0.6rem;
+}
+.sortLocation {
+    margin-top: 2px;
+}
+.notificationMenu {
+    width: 450px;
+}
+.aside {
+    width: 350px;
+}
+.toolBar {
+    width: 3rem;
+    float: left;
+}
+.toolbarIcon {
+    width: 24px;
+    height: 24px;
+
+    fill: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainContent {
+    width: calc(100% - 3rem);
+    float: left;
+}
+
+body.load .header-bar {
+    display: block;
+}
+.header-bar {
+    display: none;
+    height: 2px;
+    z-index: 20;
+}
+.header-bar span {
+    content: " ";
+    height: 2px;
+    position: absolute;
+    background-color: #667eea;
+    transition: width 0.5s ease-in-out;
+}
+
+.ol-zoom-out {
+    background-color: #7b807e;
+    border-radius: 8px;
+    display: block;
+    height: 29px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    color: #ffffff;
+    width: 29px;
+    z-index: 2;
+    box-sizing: border-box;
+    transition: background-color 0.16s ease-out;
+}
+.ol-zoom-out,
+.ol-zoom-in {
+    background-color: #7b807e;
+    border-radius: 3px;
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    color: #ffffff;
+    cursor: pointer;
+    width: 29px;
+    z-index: 2;
+    box-sizing: border-box;
+    transition: background-color 0.16s ease-out;
+}
+
+.ol-zoom-in {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.ol-zoom-out {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 20px;
+}
+.ol-rotate-reset {
+    display: none;
+}
+.deactiveTab::after {
+    content: " ";
+    width: 1px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background: #3b597d;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: -2px;
+    bottom: auto;
+    right: 128%;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.trackItem {
+    width: 1px;
+    height: 5px;
+    border-left: 1px rgb(128, 126, 126) solid;
+    position: absolute;
+}
+.trackMainItem {
+    width: 1px;
+    height: 10px;
+    background-color: rgb(128, 126, 126);
+    position: absolute;
+}
+.trackMainItemLabel {
+    height: 13px;
+    font-size: 10px;
+    margin-top: 8px;
+    margin-left: -8px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    overflow: hidden;
+}
+.dragArea {
+    margin-left: -6px;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.react-datepicker__input-container input {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 38px;
+    outline: 0 !important;
+    position: relative;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;
+    box-sizing: border-box;
+    width: 280px;
+    padding-left: 10px;
+}
+.react-datepicker-wrapper {
+    width: 280px;
+}
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+    width: 1.5rem !important   ;
+    line-height: 1.5rem !important ;
+}
+.react-datepicker-popper {
+    width: 300px !important ;
+    z-index: 100 !important ;
+}
+.react-datepicker__time-container
+    .react-datepicker__time
+    .react-datepicker__time-box {
+    width: 76px !important;
+}
+
+.react-datepicker__time-container
+    .react-datepicker__time
+    .react-datepicker__time-box
+    ul.react-datepicker__time-list
+    li.react-datepicker__time-list-item {
+    padding: 5px 5px !important;
+    font-size: 12px;
+}
+.react-datepicker__time-container {
+    width: 76px !important;
+}
+.leftTransition {
+    transition: all 0.5s ease-in-out;
+}
+.leftTransition .scrollarea,
+.leftTransition nav {
+    transition: all 0.5s ease-in-out;
+}
+
+.showMenu {
+    left: 0px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #f8f8f9;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: calc(100% - 84px);
+    bottom: 5px;
+}
+
+.hideMenu {
+    left: -500px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #f8f8f9;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: calc(100% - 84px);
+    bottom: 5px;
+}
+.showVessel {
+    right: 0px;
+}
+.hideVessel {
+    right: -360px;
+}
+
+.hideWithFilter .scrollarea,
+.hideWithFilter nav {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.showWithFilter .scrollarea,
+.showWithFilter nav {
+    width: calc(100% - 330px);
+    margin-left: 330px;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+.text-shadow-black {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.capitalizeFirst:first-letter {
+    text-transform: capitalize;
+}
+.model-dark {
+    z-index: 40 !important;
+}
+
+[time-tooltip]:before {
+    position: absolute;
+    content: attr(time-tooltip);
+    display: none;
+    left: -14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 10px 3px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 100;
+    top: -35px;
+    font-size: 10px;
+}
+[time-tooltip]:after {
+    position: absolute;
+    content: " ";
+    display: none;
+    left: 6px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    border-right: 0px;
+    width: 8px;
+    height: 8px;
+    top: -17px;
+    transform: rotate(-45deg);
+    z-index: 100;
+}
+
+[data-tooltip]:before,
+.helpTooltip .before {
+    position: absolute;
+    content: attr(data-tooltip);
+
+    display: none;
+    left: 61px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 10px 3px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    top: 11px;
+    white-space: nowrap;
+    z-index: 100;
+}
+[data-tooltip]:after,
+.helpTooltip .after {
+    position: absolute;
+    content: " ";
+    display: none;
+    left: 57px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-right: 0px;
+    border-bottom: 0px;
+    width: 8px;
+    height: 8px;
+    top: 20px;
+    transform: rotate(-45deg);
+    z-index: 100;
+}
+.menuLinkArrow {
+    position: absolute;
+    content: " ";
+    left: -5px;
+    background: #f8f8f9;
+    border: 1px solid #ddd;
+    border-right: 0px;
+    border-bottom: 0px;
+    width: 8px;
+    height: 8px;
+
+    transform: rotate(-45deg);
+}
+.menuLinkArrow.favorite {
+    top: 150px;
+}
+
+.menuLinkArrow.filter {
+    top: 100px;
+}
+
+.menuLinkArrow.search {
+    top: 50px;
+}
+
+.menuLinkArrow.vessel {
+    top: 51px;
+}
+
+.menuLinkArrow.inspect {
+    top: 243px;
+}
+
+.menuLinkArrow.live {
+    top: 341px;
+}
+
+[time-tooltip]:hover:before,
+[time-tooltip]:hover:after,
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+.helpTooltip:hover .before,
+.helpTooltip:hover .after {
+    display: block;
+}
+
+.hideMenuBtn {
+    margin-right: -1.24rem;
+}
+div[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    font-size: 10px;
+    width: 50px;
+    margin-left: -25px;
+    text-align: center;
+}
+
+div[title] {
+    position: relative;
+    display: inline-block;
+}
+.leftTransition {
+    transition: all 0.5s ease-in-out;
+}
+.hideLeft {
+    left: -500px !important;
+}
+.mainContent {
+    width: calc(100% - 320px);
+    position: relative;
+    height: calc(100% - 64px);
+}
+.mainContentFullWidth {
+    width: 100%;
+    position: relative;
+    height: calc(100% - 64px);
+}
+
+.mainHeader {
+    width: calc(100% - 320px);
+}
+.mainContentFull {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.ol-tooltip {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    color: white;
+    padding: 4px 8px;
+    opacity: 0.7;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.ol-tooltip-measure {
+    opacity: 1;
+    font-weight: bold;
+}
+.ol-tooltip-static {
+    background-color: #ffcc33;
+    color: black;
+    border: 1px solid white;
+}
+.ol-tooltip-measure:before,
+.ol-tooltip-static:before {
+    border-top: 6px solid rgba(0, 0, 0, 0.5);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    margin-left: -7px;
+    left: 50%;
+}
+.ol-tooltip-static:before {
+    border-top-color: #ffcc33;
+}
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
+.z-900 {
+    z-index: 900;
+}
+.location {
+    width: 1200px;
+    height: 700px;
+}
+.mapLocation {
+    width: 1150px;
+    height: 500px;
+}
+.dragme {
+    position: relative;
+    width: 270px;
+    height: 203px;
+    cursor: move;
+}
+#draggable {
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+#printFrame,
+#printArea {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+}

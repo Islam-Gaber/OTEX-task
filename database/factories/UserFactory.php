@@ -18,8 +18,7 @@ class UserFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'password' => Hash::make(123456), // password
-            //'type' => 'admin',
+            'password' => Hash::make(123456),
         ];
     }
 
