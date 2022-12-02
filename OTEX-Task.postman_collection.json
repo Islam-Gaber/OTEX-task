@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "e87668e3-ec0b-4855-9d05-c54951d3d04b",
+		"name": "OTEX-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5N2UwMWNiYS05OWEwLTQwYzgtOTNiNi0yNDJhMjlkMDNmYjEiLCJqdGkiOiI5ZGI3NmM2MzIwNGQ5YjFlYWZjOWI0YTYzYjZmMzI4ZDRiNjJmYzk1OTUwMTQwYWNkYzc4YjRiZWFmM2UzNjM4YjQxZGZmNDEwMTQxM2U5NiIsImlhdCI6MTY2OTkwMjM5OCwibmJmIjoxNjY5OTAyMzk4LCJleHAiOjE3MDE0MzgzOTgsInN1YiI6IjEwNzYiLCJzY29wZXMiOltdfQ.MDkMFpIGjYCtKFHoJ3eOX8YTfdbH7rddh8E4KJgfgA5QLyxpBXA-1ZI8HmDLq7QDikE6QGTSJ22sOAxV5TsbkyjERz0JiWTFx8jEWv8tAa80AsmhDL9n2ph9gAC28sYKpqLxibe_pFRVTUIcfjgYbve__oxzOkicKcmbNQJ-KEmWJB7NbAo07dGE930YVRbkrwSGHA-usjmybem3KN5zcDWDzI-a6IZi6c3XP3W7RSSoahoaAVme3WXkJClKvTxEL_XATYNfEWOTbBm3-XljYl9DI8FC9l4jvwbIu71Sefel3i7mqyH6U_N6LMNVzdmDHcaXWdkKexih7ExyG0cAQYjrJh14kjPcggb-akp7ZcW41nPOiUEtv39GUGYyiObO6roV3ov2hOZw0nWGk1PQkdiCpfk7rHa7E2eowqWAAkejfDF30AWoIufURIVIZdCIKmdP_gPGQ2oKRQPYfZeizHdO-XnocG1Izp3Be18lHRXpudFhaiqJFYbiLctztZ_JbeN6ykKH-ixIZzIfTKipicnxEyiA3v1PDGuZoB4WOM4jdSe_pixXzyfBTM0Ebbw3KgevbpJN0OQIjjJRKTv_H1edB3WUYg0WdXLczu21AgTsfu41tg9JsbvVohpxSu45M3XWJ5E2ywQJNMaLFhPKQQS6J6I5CGUmMIICwKMJ_6A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/create?title=task 1&description=desc 2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"create"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "task 1"
+								},
+								{
+									"key": "description",
+									"value": "desc 2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "records",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5N2UwMWNiYS05OWEwLTQwYzgtOTNiNi0yNDJhMjlkMDNmYjEiLCJqdGkiOiI4NTc1YTRmMGU5ZDA1ODg4ODdiYzQzZTIyMmEwOWU0OTAwZjYxOWUwYzRkYjFhMzhiNzFjNTcyMTI0YWRkY2Q0Y2Y0YTNjMjhiOTMwZmU4ZCIsImlhdCI6MTY2OTg4OTM1MCwibmJmIjoxNjY5ODg5MzUwLCJleHAiOjE3MDE0MjUzNTAsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.WzNwqwWEoYC9oQojmSDyHsfBqvYh8XEuzYDK3LtESiLZiZ3-6V8okhEJK92NbfQU-SeAj3DCnhyAdkhG8AUCL-T5mfRc4UvcBlB6sjonZSUItbbmvbWi_Y6Ca8fE-1pawUn2tOxpBqRWuIPem-Mz-lh-6tvV6miamHogQAbCk2IpES_b6-WqsKU7hLF63zRM7UgRckxOkxffEIyKnrD1VdDVvdQRlpeazHwd4LMsq-Qi7_77Y6_EhZ0deLhmaLlFX2GkIdXODuFqi2pG0jRSdLAql40-V0MfGULV-1d0SKWNQSBLn6MkgYVfgxL-S5LKvMmJRZ51HGUTz0ya4LYHThxB2K1lZ5zOo11JutH_Puko4Vm4Eev_ly9NlBr-sdQOqsJxDe7e5Rwh3QNttegX7xZ9hor-_UgRvTROJPAOPL5FdXiYdwnV6OpfCRaEL1iYP8uHtGPvJ1ihmzyHUFfI7KftyRSvRYP3GsP_LCbaELlsMo2LAKASxG97zVS7HtjDb6lq60KN8TZ1n64VIr4rlRDU-NuaKSCwa5HvrenysvLbA1NdXPGjw-J3ooA6BsTVI6zy-BT7T-LNDVx4jNnvbCoBQXpaIOjY6k5H0lwJKXie9s93GNZFlGNqDeeLgeg_0yRHH7Lq7CrrQxL_XW3tDZD_QEy1qMFu7kRU8Xoy-DE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"records"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/login?email=user1@gmail.com&password=123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "user1@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "123456"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5N2UwMWNiYS05OWEwLTQwYzgtOTNiNi0yNDJhMjlkMDNmYjEiLCJqdGkiOiJiYzBmZWE4YjRhOTA3NDEzMzlmNmZjNjA4YmJmNDRhOTg3Njc4OWNiMTRkM2FlODAyZGU2NDlmM2JlNGQ3MjlkOTZmOTNjYmNlZTc4NzBiYSIsImlhdCI6MTY2OTk4ODY2OSwibmJmIjoxNjY5OTg4NjY5LCJleHAiOjE3MDE1MjQ2NjksInN1YiI6IjExMDUiLCJzY29wZXMiOltdfQ.voc0CsOjShqG3nqR-OHYf3xBck8dvUzB35HmDxcE_tYrYbLStQsMQqNHpSD_RBumSxihIgubarxU_F8qkrQdAwCFrFoFaMUF-DhEqtrUSJi80akrHMQelx1nhiAbMF-E-paS_M8mXFJUVZV-SUPYj2zowCKW7dj3wSIBtDLtx5jX2E7KOo5oDZRoCdFIbJC_ZBUH6C391reSeH8a_IAxwHwb8x74n5f1rBBvLQvAPnDpGLF2iu1JTHoIi1TDULhTtpUWLaXdK2xd0TOC-NJMSWXLwc1GH_yFnCd9OjuMPMqj7xfYoGrm_pOTcFVydTvfiZawBtcujIzu6AgmWzgw28bbIeXX-nZ-66vyMEuzR7f51z41_4Wgh6sigzfpn0lOXWPtNrsMMT6alM8mZETknt3NUpYCig4_JDK8CzzIBS44mKNivkiVdwy3epmAzXj4lCX7AkXqQv_JguaISTZjgc323chqrRfEFeJ0VECsSTeOl1Gtiz4Wia2znvEO02Lwf4TN1wb1mqugEPNppf6zuLCJeP3HJ9k_I4Jmr7llYWdujgCmF-KmuDa2BqqAcjbx82pGWszrWOAEHpKug8L9jfaFs1R5hHsrir_DtOk5h5kotFO3CfiQPBkJpHzr5AKmJ3dbhE8-z7SWNRdyVeJZA8gDAJAqxSQSB9AgugUd-Pw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTUyZTdmZmE0NmE3MWY1YjhlYzY0NzkwNzc5NzlhNzU2NmQ0MjNhMDYzODQ5MWE5MjA5MzY2MWQyY2RiZjQ1NmYwNjc0ZWI2YmVjNjgyYWMiLCJpYXQiOjE2NjQxMDk3ODUsIm5iZiI6MTY2NDEwOTc4NSwiZXhwIjoxNjk1NjQ1Nzg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.ekOB2yplpvilQSYwpme9JUubkpdUoPtj_uYOIL3LL8rccI3URD6ySE1crw17d13-ZyODYD-BELXKk_hO8X6RnBf20NR6nCsGv4mxSppJlByoD4iNI1MMa_n54dvBr96gQ7r8yp_hTjSpy-TwzxukKvA3Kn_JYpj5LR2qVbwlWeTUt1DkcBH8sjmOBpd0J3ygHcPu5Yni43mjlMEnxPxohCtMtn6v4zk8FZ0nVoz_0Gx6nvL0JTgp9zGGuY2__0SRWP8wbKKYoa0N-4TyW5U3QdJkh0HbxObcbIcVXlC6NhNJ5FLJdmHnTm5Hl3piMD4gmYuAYFk2rcdyzrjr9CEIr0wE5L9QtsRUS3zKXM9BJiOd-j7IIsdJd-G0fhN_hWBQ4MmRGJ4yb_ph_CJfLIX6ChWYX_xQ1VrJH4yvxseLY5u_u3D5s6qH9caw0m3bMsF8WRuP4zjynqDpmIU5x8NWy2Oaz6JR1xWgUeEg_HV4FrjJ3Xy_E0hozpM_fiR0dlrDsRXjy65KSwuMNX-gspUqxboHXMViMKK1vWtmAH_0aEg-jPzZd7H6yE4fpvyaZeyPwO60Q5zS0NoeaQzNp-l5moo47SE5od098KqmmOLCfCOD7qijxo4uW__qtPpcbhy8nCQp2BzejlIGgyhgXooIoIcuUZ_pMsE09NS3e2U8HbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/register?name=user1&email=user1@gmail.com&password=123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user1"
+								},
+								{
+									"key": "email",
+									"value": "user1@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "123456"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
