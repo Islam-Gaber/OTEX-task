@@ -3,6 +3,13 @@
 
 Task managment system.
 
+
+### important
+
+* create database in phpMyAdmin
+* copy ```.env.example``` file add remame it to ```.env```
+* conigration database in ```.env```
+
 ### inistallation and run
 
 This is an example of how to list things you need to use the software and how to install them.
