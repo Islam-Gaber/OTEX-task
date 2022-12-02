@@ -15,15 +15,15 @@ Task managment system.
 This is an example of how to list things you need to use the software and how to install them.
 * back end server
   ```sh
-    composer install
-    composer dump-autoload
-    composer require laravel/passport
-    php artisan migrate
-    php artisan passport:install
-    php artisan key:generate
-    php artisan config:cache
-    php artisan db:seed
-    php artisan serve
+   composer install
+   composer dump-autoload
+   composer require laravel/passport
+   php artisan migrate
+   php artisan passport:install
+   php artisan key:generate
+   php artisan config:cache
+   php artisan db:seed
+   php artisan serve
   ```
 * front end
   ```sh
@@ -31,3 +31,7 @@ This is an example of how to list things you need to use the software and how to
   npm install
   npm start
   ```
+
+## Note
+ * ```Laravel Framework 8.83.26 ```
+ * ```react: "^16.13.1" ```
