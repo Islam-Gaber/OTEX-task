@@ -36,5 +36,10 @@ This is an example of how to list things you need to use the software and how to
   ```
 
 ## Note
+<div>
+<a href="https://github.com/Islam-Gaber/OTEX-task/blob/main/OTEX-Task.postman_collection.json">OTEX-Task.postman_collection.json</a>
+<b>it is a file you can import it in Postman app to test back end APIS</b>
+</div>
+ 
  * ```Laravel Framework 8.83.26 ```
  * ```react: "^16.13.1" ```
