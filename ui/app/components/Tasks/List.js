@@ -373,13 +373,11 @@ class List extends React.Component {
     render() {
         return (
             <main
-                className={` ${
-                    this.state.tab !== "list" && this.state.tab !== undefined
+                className={` ${this.state.tab !== "list" && this.state.tab !== undefined
                         ? "hidden"
                         : null
-                } ${
-                    this.props.full == false ? "ml-side" : null
-                } w-full absolute left-0 top-0 h-full overflow-hidden font-semibold`}
+                    } ${this.props.full == false ? "ml-side" : null
+                    } w-full absolute left-0 top-0 h-full overflow-hidden font-semibold`}
             >
                 {this.state.create || this.state.update ? (
                     <DataModel
@@ -420,11 +418,10 @@ class List extends React.Component {
                 ></Search>
 
                 <div
-                    className={` ${
-                        this.props.full == false
+                    className={` ${this.props.full == false
                             ? "mainContent"
                             : "mainContentFullWidth"
-                    } h-full ltr`}
+                        } h-full ltr`}
                 >
                     {" "}
                     {this.state.loading ? (
@@ -471,14 +468,14 @@ class List extends React.Component {
                                                 {this.renderOrder(
                                                     "user"
                                                 )}
-                                                creator
+                                                state
                                             </th>
                                             <th
                                                 scope="col"
-                                                className={`px-6 py-3  text-xs font-semibold text-gray-500 uppercase tracking-wider`}
+                                                className={`px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider`}
                                             >
                                                 {this.renderOrder("state")}
-                                                state
+                                                creator
                                             </th>
 
                                             <th
@@ -497,9 +494,9 @@ class List extends React.Component {
                                             return (
                                                 <tr
                                                     key={item.id}
-                                                    className="bg-white border-b border-gray-400"
+                                                    className="bg-white text-center border-b border-gray-400"
                                                 >
-                                                    <td className=" relative flex items-start px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">
+                                                    <td className="px-0 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                                         <div className="ml-3 text-sm">
                                                             <label
                                                                 htmlFor={`select-${item.id}`}
@@ -524,29 +521,29 @@ class List extends React.Component {
                                                         )} text-sm font-semibold`}
                                                     >
                                                         {this.userData.type == 'admin' ?
-                                                        <>
-                                                        <a
-                                                            onClick={() => {
-                                                                this.toggleUpdate(
-                                                                    item.id
-                                                                );
-                                                            }}
-                                                            className="mx-4 cursor-pointer text-blue-600 hover:text-blue-900"
-                                                        >
-                                                            update
-                                                        </a>
-                                                        <a
-                                                            onClick={() => {
-                                                                this.toggleDelete(
-                                                                    item.id
-                                                                );
-                                                            }}
-                                                            className=" cursor-pointer text-blue-600 hover:text-blue-900"
-                                                        >
-                                                            delete
-                                                        </a>
-                                                        </>
-                                                        : null}
+                                                            <>
+                                                                <a
+                                                                    onClick={() => {
+                                                                        this.toggleUpdate(
+                                                                            item.id
+                                                                        );
+                                                                    }}
+                                                                    className="mx-4 cursor-pointer text-blue-600 hover:text-blue-900"
+                                                                >
+                                                                    update
+                                                                </a>
+                                                                <a
+                                                                    onClick={() => {
+                                                                        this.toggleDelete(
+                                                                            item.id
+                                                                        );
+                                                                    }}
+                                                                    className=" cursor-pointer text-blue-600 hover:text-blue-900"
+                                                                >
+                                                                    delete
+                                                                </a>
+                                                            </>
+                                                            : null}
                                                     </td>
                                                 </tr>
                                             );
@@ -566,11 +563,11 @@ class List extends React.Component {
                                             <span className="font-semibold ml-1 mr-1">
                                                 {(this.state.page - 1) * 10 +
                                                     10 >
-                                                this.state.total
+                                                    this.state.total
                                                     ? this.state.total
                                                     : (this.state.page - 1) *
-                                                          10 +
-                                                      10}
+                                                    10 +
+                                                    10}
                                             </span>
                                             from:
                                             <span className="font-semibold ml-1 mr-1">
